@@ -4,75 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swaroopa Vasant Jape - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #0056b3;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-top: 10px;
-        }
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 20px auto;
-        }
-        .section {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .section-header {
-            padding: 10px 20px;
-            background: #007bff;
-            color: #fff;
-            cursor: pointer;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-        }
-        .section-header:hover {
-            background: #0056b3;
-        }
-        .section-content {
-            display: none;
-            padding: 20px;
-        }
-        .active .section-content {
-            display: block;
-        }
-        .active .section-header {
-            background: #0056b3;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    header {
+        background: #d32f2f;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 10px;
+        border: 4px solid #d32f2f;
+    }
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 20px auto;
+    }
+    .section {
+        background: #222;
+        border: 1px solid #d32f2f;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .section-header {
+        padding: 10px 20px;
+        background: #d32f2f;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .section-header:hover {
+        background: #a42424;
+    }
+    .section-content {
+        display: none;
+        padding: 20px;
+    }
+    .active .section-content {
+        display: block;
+    }
+    .active .section-header {
+        background: #a42424;
+    }
+    a {
+        color: #ff7961;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const headers = document.querySelectorAll('.section-header');
