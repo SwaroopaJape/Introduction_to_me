@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swaroopa Vasant Jape - Portfolio</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,6 +13,8 @@
             background-color: #000;
             color: #fff;
         }
+
+        /* Header Styles */
         header {
             background: #0056b3;
             color: #fff;
@@ -38,11 +41,15 @@
         header .info p {
             margin: 5px 0;
         }
+
+        /* Container Styles */
         .container {
             width: 90%;
             max-width: 900px;
             margin: 20px auto;
         }
+
+        /* Section Styles */
         .section {
             background: #222;
             border: 1px solid #0056b3;
@@ -51,30 +58,24 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .section-header {
-            padding: 10px 20px;
+            padding: 15px;
             background: #0056b3;
             color: #fff;
             cursor: pointer;
             font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
         }
         .section-header:hover {
             background: #003d80;
         }
         .section-content {
             display: none;
-            padding: 20px;
+            padding: 15px;
         }
         .active .section-content {
             display: block;
         }
-        .active .section-header {
-            background: #003d80;
-        }
+
+        /* Link Styles */
         a {
             color: #3da9fc;
             text-decoration: none;
@@ -82,6 +83,8 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Footer Styles */
         footer {
             background: #222;
             text-align: center;
@@ -136,6 +139,41 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <div class="section-header">Projects</div>
+            <div class="section-content">
+                <h3><a href="https://github.com/cs-102/team-A5-grade-genius">GradeGenius</a></h3>
+                <ul>
+                    <li>Created the SPI Predictor page with front-end and JavaScript functionalities.</li>
+                    <li>Designed user interface elements, including logo, ensuring a seamless user experience.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <div class="section-header">Skills</div>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Programming Languages:</strong> C, C++, Python, JavaScript, R, HTML, CSS</li>
+                    <li><strong>Software Tools:</strong> LaTeX, Linux, Git, GitHub</li>
+                    <li><strong>Electronics Skills:</strong> Microprocessor 8085, VHDL</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Leadership Section -->
+        <div class="section">
+            <div class="section-header">Leadership & Extracurricular Activities</div>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Gurukul Varta Student Content Editor</strong> (September 2024 – Present)</li>
+                    <li><strong>Eunoia Club (Fine Arts Club) Head</strong> (October 2024 – Present)</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <footer>
         <p>You can find me at:</p>
@@ -150,12 +188,11 @@
         </a>
     </footer>
     <script>
-        // JavaScript to handle dropdown functionality
         document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                const header = section.querySelector('.section-header');
+            const headers = document.querySelectorAll('.section-header');
+            headers.forEach(header => {
                 header.addEventListener('click', () => {
+                    const section = header.parentElement;
                     section.classList.toggle('active');
                 });
             });
