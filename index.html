@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swaroopa Vasant Jape - Portfolio</title>
     <style>
-        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,8 +12,6 @@
             background-color: #000;
             color: #fff;
         }
-
-        /* Header Styles */
         header {
             background: #0056b3;
             color: #fff;
@@ -41,15 +38,11 @@
         header .info p {
             margin: 5px 0;
         }
-
-        /* Container Styles */
         .container {
             width: 90%;
             max-width: 900px;
             margin: 20px auto;
         }
-
-        /* Section Styles */
         .section {
             background: #222;
             border: 1px solid #0056b3;
@@ -58,24 +51,30 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .section-header {
-            padding: 15px;
+            padding: 10px 20px;
             background: #0056b3;
             color: #fff;
             cursor: pointer;
             font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
         .section-header:hover {
             background: #003d80;
         }
         .section-content {
             display: none;
-            padding: 15px;
+            padding: 20px;
         }
         .active .section-content {
             display: block;
         }
-
-        /* Link Styles */
+        .active .section-header {
+            background: #003d80;
+        }
         a {
             color: #3da9fc;
             text-decoration: none;
@@ -83,8 +82,6 @@
         a:hover {
             text-decoration: underline;
         }
-
-        /* Footer Styles */
         footer {
             background: #222;
             text-align: center;
@@ -144,7 +141,7 @@
         <div class="section">
             <div class="section-header">Projects</div>
             <div class="section-content">
-                <h3><a href="https://github.com/cs-102/team-A5-grade-genius">GradeGenius</a></h3>
+                <h3><a href="https://github.com/cs-102/team-A5-grade-genius">GradeGenius</a> (March 2024 – April 2024)</h3>
                 <ul>
                     <li>Created the SPI Predictor page with front-end and JavaScript functionalities.</li>
                     <li>Designed user interface elements, including logo, ensuring a seamless user experience.</li>
