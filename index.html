@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: rgba(0, 0, 0, 0.6); /* Black background with 20% opacity */
+            background: rgba(0, 0, 0, 0.8); /* Black background with 20% opacity */
             color: #fff;
             min-height: 100vh;
             display: flex;
@@ -26,7 +26,7 @@
             height: 100%;
             background: url('bg_gh.jpeg') no-repeat center center fixed;
             background-size: cover;
-            opacity: 0.6; /* 60% opacity */
+            opacity: 0.4; /* 60% opacity */
             z-index: -1; /* Place it behind all content */
         }
         header {
@@ -187,7 +187,6 @@
             <div class="section-header">Contact Me</div>
             <div class="section-content">
                 <p>Email: swaroopa@example.com</p>
-                <p>Phone: +91-9876543210</p>
             </div>
         </div>
     </div>
@@ -196,4 +195,23 @@
         <a href="https://github.com/SwaroopaJape" target="_blank">
             <img src="github-icon.png" alt="GitHub">
         </a>
-        <a href="https://www.linkedin.com/in/sw
+        <a href="https://www.linkedin.com/in/swaroopa-jape-7a06b429b/" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="instagram-icon.png" alt="Instagram">
+        </a>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const headers = document.querySelectorAll('.section-header');
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const section = header.parentElement;
+                    section.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
