@@ -9,11 +9,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
+            background: url('bg_gh.jpeg') no-repeat center center fixed;
+            background-size: cover;
             color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
-            background: #0056b3;
+            background: rgba(0, 86, 179, 0.9);
             color: #fff;
             padding: 20px;
             display: flex;
@@ -42,9 +46,10 @@
             width: 90%;
             max-width: 900px;
             margin: 20px auto;
+            flex-grow: 1; /* Ensures content stretches before the footer */
         }
         .section {
-            background: #222;
+            background: rgba(34, 34, 34, 0.9);
             border: 1px solid #0056b3;
             border-radius: 5px;
             margin-bottom: 20px;
@@ -83,11 +88,14 @@
             text-decoration: underline;
         }
         footer {
-            background: #222;
+            background: rgba(34, 34, 34, 0.9);
             text-align: center;
             padding: 20px 0;
             margin-top: 20px;
             border-top: 1px solid #0056b3;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
         footer p {
             margin: 10px 0;
